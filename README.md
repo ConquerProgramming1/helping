@@ -10,7 +10,7 @@ Over time I found that the built-in ``dir()`` function was actively confusing
 to people learning Python, and I developed this library to help the students.
 Then I found myself using it for my own coding.
 
-That's when I new I had something worthwhile.
+That's when I knew I had something worthwhile.
 
 The goal is "Readable information for real people."
 
