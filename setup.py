@@ -4,8 +4,8 @@ with open("README.md", "r") as fh:
     long_description = fh.read()
 
 setuptools.setup(
-    name="helping-ConquerProgramming1",
-    version="0.0.1",
+    name="helping",
+    version="0.0.3",
     author="Ronald Hayden",
     author_email="ron@conquerprogramming.com",
     description="Readable information for real people.",
