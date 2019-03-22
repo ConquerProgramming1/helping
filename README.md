@@ -19,11 +19,180 @@ The primary method is ``helping.info()``, which provides a readable summary of
 an object. It separates out the methods, attributes, classes, and exceptions, 
 and perhaps most importantly, doesn't show private items unless requested.
 
+If you call this without arguments, it provides info about the built-in Python functions, classes, and exceptions.
+
 To see private items, pass the argument ``private=True``.
 
 By default the items are listed vertically, which I've found to be most readable.
 If you'd like a more compact form, pass ``compact=True``.
 
+Here is the output from calling ``helping.info(int)``:
+
+    int (<class 'type'>)
+      methods:
+        bit_length()
+        conjugate()
+        from_bytes()
+        to_bytes()
+
+      attributes:
+        denominator
+        imag
+        numerator
+        real
+
+Here is the output from calling ``helping.info()``:
+
+    builtins (<class 'module'>)
+      methods:
+        abs()
+        all()
+        any()
+        ascii()
+        bin()
+        breakpoint()
+        callable()
+        chr()
+        compile()
+        copyright()
+        credits()
+        delattr()
+        dir()
+        divmod()
+        eval()
+        exec()
+        exit()
+        format()
+        getattr()
+        globals()
+        hasattr()
+        hash()
+        help()
+        hex()
+        id()
+        input()
+        isinstance()
+        issubclass()
+        iter()
+        len()
+        license()
+        locals()
+        max()
+        min()
+        next()
+        oct()
+        open()
+        ord()
+        pow()
+        print()
+        quit()
+        repr()
+        round()
+        setattr()
+        sorted()
+        sum()
+        vars()
+
+      classes:
+        BaseException
+        bool
+        bytearray
+        bytes
+        classmethod
+        complex
+        dict
+        enumerate
+        filter
+        float
+        frozenset
+        GeneratorExit
+        int
+        KeyboardInterrupt
+        list
+        map
+        memoryview
+        object
+        property
+        range
+        reversed
+        set
+        slice
+        staticmethod
+        str
+        super
+        SystemExit
+        tuple
+        type
+        UnicodeDecodeError
+        UnicodeEncodeError
+        UnicodeTranslateError
+        zip
+
+      attributes:
+        Ellipsis
+        NotImplemented
+
+      exceptions:
+        ArithmeticError
+        AssertionError
+        AttributeError
+        BlockingIOError
+        BrokenPipeError
+        BufferError
+        BytesWarning
+        ChildProcessError
+        ConnectionAbortedError
+        ConnectionError
+        ConnectionRefusedError
+        ConnectionResetError
+        DeprecationWarning
+        EnvironmentError
+        EOFError
+        Exception
+        FileExistsError
+        FileNotFoundError
+        FloatingPointError
+        FutureWarning
+        ImportError
+        ImportWarning
+        IndentationError
+        IndexError
+        InterruptedError
+        IOError
+        IsADirectoryError
+        KeyError
+        LookupError
+        MemoryError
+        ModuleNotFoundError
+        NameError
+        NotADirectoryError
+        NotImplementedError
+        OSError
+        OverflowError
+        PendingDeprecationWarning
+        PermissionError
+        ProcessLookupError
+        RecursionError
+        ReferenceError
+        ResourceWarning
+        RuntimeError
+        RuntimeWarning
+        StopAsyncIteration
+        StopIteration
+        SyntaxError
+        SyntaxWarning
+        SystemError
+        TabError
+        TimeoutError
+        TypeError
+        UnboundLocalError
+        UnicodeError
+        UnicodeWarning
+        UserWarning
+        ValueError
+        Warning
+        ZeroDivisionError
+        
 ## functions()
 Shows any functions defined in the script, and all built-in Python functions.
 
