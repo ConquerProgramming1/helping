@@ -14,6 +14,11 @@ That's when I knew I had something worthwhile.
 
 The goal is "Readable information for real people."
 
+## Installation
+Run this command (note that Python 3.6 or greater is required):
+
+``pip install helping``
+
 ## info()
 The primary method is ``helping.info()``, which provides a readable summary of
 an object. It separates out the methods, attributes, classes, and exceptions, 
