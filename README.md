@@ -214,4 +214,4 @@ Shows just the classes belonging to the specified object.
 ## exceptions()
 Shows just the exceptions belonging to the specified object.
 
-[image-1]:	file://helping_logo.jpg "Helping logo"
+*Logo by [Ericatures](https://www.ericatures.com)*
